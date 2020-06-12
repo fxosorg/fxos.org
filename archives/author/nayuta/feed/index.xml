@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Firefox OS コミュニティ！ &#187; nayuta</title>
+	<atom:link href="/archives/author/nayuta/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 19 Feb 2019 03:30:26 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.6.1</generator>
+		<item>
+		<title>今後開催予定のFxOSコミュニティイベント一覧 2015.02版</title>
+		<link>/archives/382</link>
+		<comments>/archives/382#comments</comments>
+		<pubDate>Fri, 20 Feb 2015 10:25:36 +0000</pubDate>
+		<dc:creator>nayuta</dc:creator>
+				<category><![CDATA[未分類]]></category>
+
+		<guid isPermaLink="false">/?p=382</guid>
+		<description><![CDATA[みなさんこんにちは。 国内初の商用 Firefox OS 端末 Fx0 に続き、近く Panasonic から [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>みなさんこんにちは。</p>
+<p>国内初の商用 Firefox OS 端末 Fx0 に続き、近く Panasonic から Firefox OS 搭載 TV が発売される予定です。この機会に、 Firefox OS という名前を初めて聞いた人も、普段から馴染みがある人も、みんなで集まって Firefox OS のことをより深く知れるイベントが相次いで開催されます。今回はこれらのうち Firefox OS コミュニティ発のものをいくつか紹介させていただきます。</p>
+<p>FxOS コードリーディングミートアップ #14（2/25（水） 19:30-21:30/Mozilla Japan オフィス）<br />
+<a href="https://atnd.org/events/62387">https://atnd.org/events/62387</a><br />
+FxOS のコードを読もう！というコミュニティのミートアップです。 FxOS のソースコードを読むだけではなく、 FxOS について気軽に知れる雰囲気で和気あいあいと集まるミートアップです。</p>
+<p>Firefox OS アプリハンズオン on オープンソースカンファレンス 2015 Tokyo/Spring（2/28（日） 10:00-16:00/時間中数度開催）<br />
+<a href="http://firefox-os.doorkeeper.jp/events/20401">http://firefox-os.doorkeeper.jp/events/20401</a><br />
+<a href="http://www.ospn.jp/osc2015-spring/">オープンソースカンファレンス 2015 Tokyo/Spring</a>の会場内で開催される Firefox OS アプリのハンズオンです。アプリ開発経験がない方でも Firefox OS アプリの作り方やノウハウを1から知ることができます。</p>
+<p>Firefox OS アプリハンズオン in Nagoya（2/28（日） 13:00-18:00/名古屋市 sharebase.inc）<br />
+<a href="https://atnd.org/events/62137">https://atnd.org/events/62137</a><br />
+名古屋でも Firefox OS アプリのハンズオンが開催されます。カメラアプリの作成など、 Firefox OS ならではのアプリ作りが体験できます。</p>
+<p>関東 Firefox OS 勉強会 9th (3/17（火） 19:00-21:00)<br />
+2月に引き続き3月も関東 Firefox OS 勉強会が開催されます。スマホではなくデバイスに搭載される Firefox OS の話が集まる予定です。</pr>
+<p>Firefox OS アプリハンズオン supported by Gunma.web（3/28 13:00-18:00/高崎駅近く あすなろカフェ）<br />
+<a href="http://gunmaweb.doorkeeper.jp/events/21025">http://gunmaweb.doorkeeper.jp/events/21025</a><br />
+Fx0 の発売を受けて群馬初の Firefox OS アプリハンズオンが行われます。東京に気軽に来れない、という人にもおすすめのイベントです。もちろん高崎線に揺られていって、ついでに観光！というのもおすすめです。</p>
+<p>FxOS コードリーディングミートアップ #15（3/18（水） 19:30-22:00/Mozilla Japan オフィス）<br />
+FxOS コードリーディングミートアップは毎月開催されます。気軽に、ふらっと立ち寄ってみてください。</p>
+<p>Firfox OS アプリハンズオン at 新潟（3月後半予定）<br />
+Firefox OS のアプリハンズオンが3月後半に新潟でも開催される予定です。詳しい情報はイベント詳細がまとまり次第改めてお伝えします。</p>
+<p>3/21 0day Firefox OS セキュリティセミナー (仮)<br />
+Firefox OS を題材にセキュリティセミナーが開催されます。詳しい情報はイベント詳細がまとまり次第改めてお伝えします。</p>
+<p>どれも「初めて Firefox OS に触れる人でも楽しめる」イベントとなっています。スケジュールがあうイベントが1つでもあったらぜひ参加を検討してくださいね。</p>
+]]></content:encoded>
+			<wfw:commentRss>/archives/382/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

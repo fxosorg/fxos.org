@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+		>
+<channel>
+	<title>Firefox OS コミュニティ！ へのコメント</title>
+	<atom:link href="/comments/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 19 Jul 2013 12:11:30 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.6.1</generator>
+	<item>
+		<title>関東Firefox OS勉強会 2nd に参加しました！純粋なFirefox OSの話があまりなかった、ような… #fxos &#124; Time to live forever より ユーザ向け ドキュメント へのコメント</title>
+		<link>/docs#comment-16</link>
+		<dc:creator>関東Firefox OS勉強会 2nd に参加しました！純粋なFirefox OSの話があまりなかった、ような… #fxos &#124; Time to live forever</dc:creator>
+		<pubDate>Fri, 19 Jul 2013 12:11:30 +0000</pubDate>
+		<guid isPermaLink="false">http://beta.fxos.org/?page_id=22#comment-16</guid>
+		<description><![CDATA[[...] ユーザ向け ドキュメント &#124; Firefox OS コミュニティ！ [...]]]></description>
+		<content:encoded><![CDATA[<p>[...] ユーザ向け ドキュメント | Firefox OS コミュニティ！ [...]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

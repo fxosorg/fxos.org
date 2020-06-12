@@ -1,0 +1,690 @@
+@charset "UTF-8";
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++	CSS information
++
++	file name  :common.css
++	author     :tuqulore Inc. (admin)
++	date       :2013.4.30
++	update     :2012.6.6
++	style info :共通スタイル
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+.wrap:after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+/*======================================================
+	common styles
+======================================================*/
+
+body {
+	font-family: Myriad Pro, Arial, Helvetica,"ヒラギノ角ゴ W3", "Hiragino Kaku Gothic Pro","メイリオ", Meiryo,  "MS P Gothic","ＭＳ Ｐゴシック",sans-serif;
+	font-size: 16px;
+	color: #333;
+	background-color: #f1f1f1;
+	line-height: 1.6;
+}
+i{
+	margin-right: 0.3em;
+}
+a{
+	color: #be4800;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+
+/*-----------------------------------------------
+	parts name
+-----------------------------------------------*/
+#container{
+}
+/*-----------------------------------------------
+	header
+-----------------------------------------------*/
+header{
+	background: #2097cf url(/wp-content/themes/fxos-theme/assets/img/header_bg.jpg) no-repeat 20% 0;
+	height: 400px;
+}
+header .inner{
+	width: 90%;
+	max-width: 940px;
+	margin: 0 auto;
+	padding-top: 15px;
+	position: relative;
+}
+header h1{
+	margin-top: 40px;
+}
+header h2{
+	margin: 20px 0 40px 105px;
+}
+header .os{
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+header .fox{
+	position: absolute;
+	right: 12%;
+	top: 30px;
+}
+
+
+
+/*___ joinbtn _____________________*/
+
+.joinbtn{
+	width: 315px;
+	box-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.joinbtn a{
+	display: block;
+	background-color: #cc1817;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+.joinbtn a span{
+	color: #e68c8b;
+	display: block;
+	font-size: 0.9rem;
+}
+.joinbtn a:hover{
+	background-color: #840c0b;
+}
+
+
+
+header.elsepage{
+	height: 200px;
+}
+header.elsepage .joinbtn{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+header.elsepage h1{
+	margin-top: 10px;
+}
+
+/*___ nav _____________________*/
+
+nav{
+	background-color: #e95f02;
+	text-align: center;
+	font-size: 1.2rem;
+}
+.gnav{
+	width: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+	font-weight: bold;
+}
+.gnav a{
+	color: #fff;
+	text-decoration: none;
+	padding: 0.8em 0;
+	width: 100%;
+	margin: 0.2em 0 0.3em;
+	display: block;
+}
+.gnav a:hover{
+	background-color: #be4800;
+}
+.gnav li{
+	float: left;
+	list-style: none;
+	width: 25%;
+	position: relative;
+}
+.gnav li ul{
+	position: absolute;
+	top: 3em;
+	left: 0;
+	background-color: #e95f02;
+	border: 2px solid #fff;
+	text-align: left;
+	width: 110%;
+	display: none;
+}
+.gnav li ul > li{
+	float: none;
+	font-size: 0.8em;
+	width: auto;
+}
+.gnav li ul > li a{
+	padding: 0.5em;
+	width: auto;
+}
+
+.gnav li.doc:hover > ul{
+	display: block;
+}
+
+
+/*-----------------------------------------------
+	common parts
+-----------------------------------------------*/
+
+#wrapper{
+	width: 90%;
+	max-width: 940px;
+	margin: 30px auto;
+}
+#wrapper h1{
+	font-size: 1.4rem;
+}
+
+.box{
+	background-color: #fff;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 1rem;
+}
+.box .date{
+	font-weight: bold;
+}
+.more{
+	
+}
+.more a{
+	padding: 0.7rem 2rem 0.5rem;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* ------ .org ------ */
+
+.org .box{
+	border: 3px solid #e95f02;
+}
+.org .date,
+.org h1{
+	color: #e95f02;
+}
+.org .more a{
+	background-color: #e95f02;
+}
+.org .more a:hover{
+	background-color: #be4800;
+}
+
+
+/* ------ .bl ------ */
+
+.bl .box{
+	border: 3px solid #2097cf;
+}
+.bl h1{
+	color: #2097cf;
+}
+.bl .more a{
+	background-color: #2097cf;
+}
+.bl .more a:hover{
+	background-color: #087eb6;
+}
+
+/* ------ .gray ------ */
+
+.gray .box{
+	border: 3px solid #333;
+	padding: 1.2rem;
+}
+.gray .date,
+.gray h1{
+	color: #333;
+}
+
+
+/* ------ .bw ------ */
+
+.bw .box{
+	border: 3px solid #642800;
+}
+.bw .date,
+.bw h1{
+	color: #642800;
+}
+
+
+
+/* ------ normal list ------ */
+
+.list li{
+	list-style: none;
+	border-bottom: 1px dotted #ccc;
+}
+.list li a{
+	display: block;
+	text-decoration: none;
+	padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.list li a:hover{
+	background-color: #f1f1f1;
+}
+
+/*-----------------------------------------------
+	#main
+-----------------------------------------------*/
+#main{
+	width: 65%;
+	float: left;
+}
+
+/* ------ #nowEvent ------ */
+
+#nowEvent h2{
+	font-size: 1.4rem;
+}
+#nowEvent .date{
+	text-align: right;
+	margin-bottom: 0.5rem;
+}
+#nowEvent .thumb{
+	float: left;
+	margin-right: 1rem;
+	width: 200px;
+	height: 200px;
+	background: url(/wp-content/themes/fxos-theme/assets/img/noimage.jpg) no-repeat center center;
+}
+#nowEvent .text{
+	margin-top: 1rem;
+}
+
+#nowEvent dt{
+	font-weight: bold;
+	color: #e95f02;
+}
+#nowEvent dd{
+	margin: 0 0 0.5em 2em;
+}
+
+#nowEvent .more{
+	margin-top: 0.5rem;
+}
+#nowEvent .more a{
+	display: block;
+	margin-left: 50%;
+}
+
+#nowEvent.events .more{
+	margin: 1rem 0;
+}
+
+/* ------ #pastEvent ------ */
+
+#pastEvent .box{
+	width: 100%;
+	margin: 0 0 20px;
+}
+#pastEvent .box:after{
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+}
+#pastEvent .box img{
+	width: 100%;
+	vertical-align: middle;
+}
+#pastEvent .box .thumb{
+	float: left;
+}
+#pastEvent .box .thumb a{
+	text-decoration: none;
+	color: #fff;
+}
+#pastEvent .thumb{
+	margin-right: 1rem;
+	width: 255px;
+	height: 150px;
+	background: url(/wp-content/themes/fxos-theme/assets/img/noimage.jpg) no-repeat center center;
+}
+#pastEvent .box .thumb i{
+	background-color: #e95f02;
+	padding: 5px 8px;
+}
+#pastEvent .box .more{
+	text-align: right;
+	margin: 1em 0;
+}
+#pastEvent .box:hover .more{
+}
+
+/* ------ .reports ------ */
+
+#nowEvent.reports h2{
+	margin-bottom: 1em;
+}
+#nowEvent.reports .date,
+#pastEvent .date{
+	color: #666;
+	text-align: right;
+	font-weight: normal;
+	font-size: 0.9rem;
+}
+
+/* ------ .contents ------ */
+.contents h2,
+.contents h3,
+.contents ul{
+	margin-bottom: 0.8rem;
+}
+.contents p{
+	margin-bottom: 1.2rem;
+}
+.contents h2{
+	font-size: 1.4rem;
+	/*color: #e95f02;*/
+}
+.contents h3{
+	font-size: 1.2rem;
+	border-bottom: 1px dotted #333;
+}
+.contents ul{
+	margin-left: 2em;
+}
+.contents ul li{
+	margin-bottom: 0.3rem;
+}
+.contents ul li ul li{
+	margin-bottom: 0;
+}
+.contents em{
+	color: #c00;
+	font-style: normal;
+	border: 2px solid #c00;
+	padding: 0.3rem;
+}
+
+
+/*-----------------------------------------------
+	#side
+-----------------------------------------------*/
+
+#side{
+	width: 30%;
+	float: right;
+}
+
+/* ------ #news ------ */
+
+#news .list a{
+	color: #666;
+}
+#news .list a span{
+	color: #999;
+	font-size: 0.8em;
+}
+#news .more a{
+	display: block;
+	margin-top: 1rem;
+}
+
+.borderedBnr li{
+	list-style: none;
+	border: 3px solid #642800;
+	color: #642800;
+	font-weight: bold;
+	height: 58px;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 10px;
+}
+.borderedBnr li a{
+	text-decoration: none;
+	color: #642800;
+	padding: 5px 5px 0 65px;
+	display: block;
+	height: 53px;
+}
+.borderedBnr li a:hover{
+	background-color: #f1f1f1;
+}
+.borderedBnr li img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/*-----------------------------------------------
+	footer
+-----------------------------------------------*/
+
+footer{
+	background: #666;
+	color: #fff;
+}
+footer a{
+	color: #ccc;
+}
+footer .inner{
+	width: 90%;
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 30px 0 20px;
+}
+footer .footerColumn{
+	width: 31%;
+	margin: 0 1%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+
+
+footer i.icon-external-link{
+	font-size: 0.8rem;
+}
+footer .footerColumn a{
+	text-decoration: none;
+	color: #f1f1f1;
+	display: block;
+	padding: 3px 0 3px 5px;
+}
+footer .footerColumn a:hover{
+	background-color: #333;
+}
+
+footer .footerColumn li{
+	list-style: none;
+}
+footer .copyright{
+	text-align: center;
+	font-size: 0.8rem;
+	margin-top: 1.5rem;
+}
+
+footer h1 img{
+	width: 70%;
+}
+footer h2 img{
+	width: 50%;
+	margin-left: 20%;
+}
+footer h3{
+	margin-bottom: 0.4em;
+}
+footer .joinbtn{
+	width: 75%;
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
+}
+footer .joinbtn a{
+	padding: 0.5rem 0;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++	style info : 一般的なスマートフォン用
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 800px){
+
+header .fox{
+	display: none;
+}
+nav{
+	font-size: 0.9rem;
+}
+#main, #side{
+	float: none;
+	width: 100%;
+}
+#side .borderedBnr{
+	display: none;
+}
+
+
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++	style info : 一般的なタブレット用
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 600px){
+
+header.top,
+header.elsepage{
+	background-size: 80%;
+	height: auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+header.top h1,
+header.elsepage h1{
+	margin-top: 20px;
+}
+header h1 img{
+	width: 80%;
+}
+header h2{
+	margin: 10px auto;
+}
+header h2 img{
+	width: 50%;
+}
+header.top .joinbtn,
+header.elsepage .joinbtn{
+	width: 80%;
+	margin:  0 auto;
+	position: static;
+	right: auto;
+	bottom: auto;
+}
+
+header .os{
+	display: none;
+}
+nav{
+	text-align: left;
+	font-size: 1rem;
+	display: none;
+}
+nav .gnav li{
+	float: none;
+	width: 96%;
+	border-bottom: 2px solid #fff;
+	padding: 0 2%;
+}
+.gnav li ul{
+	width: 100%;
+	z-index: 100;
+	border-left: none;
+	border-bottom: none;
+}
+/*.gnav li{
+	float: none;
+	width: 100%;
+}*/
+
+#nowEvent .thumb{
+	float: none;
+	margin: 0 auto 1rem;
+}
+
+#nowEvent .more a {
+	margin-left: 0;
+}
+
+#pastEvent .box{
+	padding: 0.5rem;
+}
+#pastEvent .box .thumb{
+	float: none;
+	margin: 0 auto 1rem;
+}
+
+footer .footerColumn{
+	width: 100%;
+	float: none;
+}
+footer h1, footer h2{
+	text-align: center;
+	margin: 0;
+}
+footer h1 img{
+	width: 50%;
+}
+footer h2 img{
+	width: 30%;
+	margin: 0;
+}
+footer .joinbtn{
+	width: 75%;
+	font-size: 0.9rem;
+	margin: 0.5rem auto 1rem;
+}
+footer .joinbtn a{
+	padding: 0.5rem 0;	
+}
+
+footer .footerColumn ul{
+	width: 90%;
+	margin: 0 auto 1rem;
+}
+footer .footerColumn ul li{
+	border-bottom: 1px dotted #ccc;
+}
+footer .footerColumn ul li a{
+	padding: 0.5rem;
+}
+
+
+}

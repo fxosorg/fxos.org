@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>コミュニティについて | Firefox OS コミュニティ！</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/fxos-theme/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; フィード" href="/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; コメントフィード" href="/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; コミュニティについて のコメントのフィード" href="/about/feed" />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='/wp-content/themes/fxos-theme/style.css?ver=3.6.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='/wp-content/themes/fxos-theme/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=3.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='next' title='ユーザ向け ドキュメント' href='/docs' />
+<meta name="generator" content="WordPress 3.6.1" />
+<link rel='canonical' href='/about' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("feeds", "1");
+
+function initialize() {
+	var feed = new google.feeds.Feed("https://groups.google.com/forum/feed/firefoxos/msgs/rss.xml?num=15");
+	feed.setNumEntries(8);
+	feed.load(function(result) {
+		if (!result.error) {
+			var container = document.getElementById("feed");
+			for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var dd = new Date(entry.publishedDate); // now
+				var yearNum = dd.getYear();
+				if (yearNum < 2000) yearNum += 1900;
+				var m = dd.getMonth() + 1;
+				if (m < 10) {m = "0" + m;}
+				var d = dd.getDate();
+				if (d < 10) {d = "0" + d;}
+				var date = yearNum + "." + m + "." + d + " ";
+				container.innerHTML += "<li><a href='" + entry.link + "' target='_blank'><i class='icon-angle-right'></i>" + entry.title + "<span>（" + date + "のスレッド）</span></a></li>";
+			}
+		}
+	});
+}
+google.setOnLoadCallback(initialize);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42237012-1', 'fxos.org');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="page page-id-17 page-template-default custom-font-enabled single-author">
+<div id="container">
+	 
+	<header class="elsepage">
+	 
+		<div class="inner">
+			<h1><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></a></h1>
+			<h2><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></a></h2>
+			 
+			<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録<span>Googleグループへ</span></a></p>
+		</div>
+	</header>
+	<nav>
+		<ul class="gnav wrap">
+			<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+			<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+			<li class="doc"><a href="#"><i class="icon-file-alt"></i>ドキュメント</a>
+				<ul>
+					<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+					<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+					<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+				</ul>
+			</li>
+			<li><a href="/reports/"><i class="icon-calendar"></i>イベントレポート</a></li>
+		</ul>
+	</nav>
+	<div class="keyvisual">
+	</div>
+	<div id="wrapper" class="wrap">
+		<div id="main">
+
+		<section class="gray page">
+		<h1><i class="icon-calendar"></i>コミュニティについて</h1>
+		<article class="box">
+			<!--<p class="date">2013.05.08</p>-->
+			<div class="contents">
+				<h2>Firefox OS コミュニティとは？</h2>
+<p>Firefox OS コミュニティには、Firefox OS に興味のある有志が集まっています。デザイナーやエンジニアはもちろん、誰もがそれぞれにできることを見つけて Firefox OS に関して日々研究をし、みんなで楽しみながら Firefox OS に貢献しています。</p>
+<p><a href="https://groups.google.com/group/firefoxos">メーリングリスト</a> (Google Group) などオンラインでの情報交換はもちろん、勉強会を始めとしたイベントを <a href="http://www.mozilla.jp/about/contact/#office">Mozilla Japan オフィス</a>のファクトリースペースなどで開催したり、他のコミュニティや企業などとも協力して勉強会、ハンズオン、ハッカソンなども開催しています。</p>
+<p>コミュニティの始まりや活動の様子については<a href="http://itpro.nikkeibp.co.jp/atcl/column/14/508663/020900007/">日経 Linux のインタビュー記事</a>も参考にしてください。</p>
+<p><img alt="office" src="/wp-content/uploads/2013/05/office-550x364.jpg" width="495" height="328" /><br />
+（<a href="http://www.mozilla.jp/about/contact/#office">Mozilla Japan オフィス</a>のファクトリースペース）</p>
+<h2>どうやって参加するの？</h2>
+<p>Firefox OS や Web アプリの開発に興味のある方であれば、どなたでも参加していただけます。<br />
+Firefox OS に関するイベントの多くは <a href="https://firefox-os.doorkeeper.jp/">Doorkeeper</a> や<a href="https://groups.google.com/group/firefoxos">メーリングリスト</a><span style="line-height: 1.714285714; font-size: 1rem;">で告知されるので、気になるイベントがあれば直接参加してください。お住まいの地域の近くでイベントが開催されない方は、ご自身でイベントを企画していただいたり、開催の提案やリクエストをしてください。</span></p>
+<h2>どんなイベントや活動があるの？</h2>
+<p>セミナー形式の勉強会は Firefox OS 勉強会が東京で 1~2 ヶ月に一度、大阪、名古屋、広島などでも不定期に実施されています。ブラウザのエンジンや Firefox OS の下回りに注力した勉強会としては Gecko 勉強会も不定期に開催されています。</p>
+<p>オンライン・オフラインで情報交換を続ける場としては <a href="http://reading.fxos.org/">Firefox OS コードリーディング</a>が毎月ほぼ定期的にミートアップ (に加えて懇親会やノマド) をしており、活発に活動を続けています。</p>
+<p>ハンズオンやハッカソンについては、<a href="http://kyokuri.org/">京都クリエイティブワークショップ</a>が (京都といいつつ東京で) 少人数のハッカソンを１〜３ヶ月に一度程度のペースで、その他にも時々の話題に応じてハンズオンやハッカソンを不定期に実施しています。</p>
+<p>製品のローカライズやドキュメントの執筆・翻訳については MDN 翻訳ミートアップが 1〜2 ヶ月に一度程度開催されているほか、ML やオンラインでのやり取りを行っています。<a href="/hacks/mdn_doc_fest/" target="_blank">Mozillaドキュメント翻訳の始め方</a> もご覧ください。</p>
+<p>新しいイベント情報のお知らせが欲しい方は <a href="https://firefox-os.doorkeeper.jp/">Doorkeeper</a> や<a href="https://groups.google.com/group/firefoxos">メーリングリスト</a>に登録してください。</p>
+<h2>情報共有</h2>
+<p>Twitter での情報共有では<a href="https://twitter.com/search?q=%23fxos">ハッシュタグ #fxos </a>を使用しています。Firefox OS に関連する話題であれば、ぜひハッシュタグを付けてつぶやいてください。</p>
+<p>この Firefox OS コミュニティとあわせて、Mozilla や Web 技術に関する開発者が集まり知識・アイデアの共有やイベントの開催を行っているコミュニティサイト <a href="https://dev.mozilla.jp/">Mozilla Developer Street</a> (通称 modest) もご覧ください。</p>
+			</div>
+		</article>
+
+	</section>
+	
+		</div><!-- /#main -->
+		<div id="side">
+			<section id="news" class="bl">
+				<h1><i class="icon-rss"></i>最近のトピック</h1>
+				<article class="box">
+					<ul class="list icons" id="feed"></ul>
+					<p class="more"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-circle-arrow-right"></i>すべてみる</a></p>
+				</article>
+			</section>
+			<section id="info" class="bw">
+				<article class="box">
+					<p>Firefox OS コミュニティメンバーの書いた書籍が発売されました！</p>
+					<p class="text-center"><a href="http://www.amazon.co.jp/dp/4897979218/"><img src="/wp-content/themes/fxos-theme/assets/img/fxos_cover.jpg" alt="Firefox OSアプリ開発ガイド"></a></p>
+					<p><strong><a href="http://www.amazon.co.jp/dp/4897979218/">Firefox OSアプリ開発ガイド</a></strong></p>
+					<p style="font-size:0.8em;">本間 雅史, 宮家 秀二, 秋葉 秀樹, 今村 博宜, 山本 祐輔, 秋葉 ちひろ, 小森田 賢史, 浅井 智也 (監修)</p>
+				</article>
+			</section>
+		</div><!-- /#side -->
+	</div><!-- /#wrapper -->
+
+	<footer>
+		<div class="inner">
+			<div class="wrap">
+				<div class="footerColumn">
+					<h1><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></h1>
+					<h2><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></h2>
+					<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録</a></p>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-chevron-down"></i>メインメニュー</h3>
+					<ul>
+						<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+						<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+						<li><a href="/reports/"><i class="icon-calendar"></i>イベント / レポート</a></li>
+						<li><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-rss"></i>最近のトピック</a></li>
+					</ul>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-file-alt"></i>ドキュメント</h3>
+					<ul>
+						<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+						<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+						<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">Portions of this content are ©2013-2014 by Firefox OS Community.<br>このサイトの一部はクリエイティブ・コモンズ・ライセンスのもとでライセンスされています。</p>
+		</div>
+	</footer>
+
+</div><!-- /#container -->
+</body>
+</html>

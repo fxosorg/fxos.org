@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>ロックスクリーンを使う | Firefox OS コミュニティ！</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/fxos-theme/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; フィード" href="/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; コメントフィード" href="/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; ロックスクリーンを使う のコメントのフィード" href="/docs/fx0/lockscreen/feed" />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='/wp-content/themes/fxos-theme/style.css?ver=3.6.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='/wp-content/themes/fxos-theme/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=3.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='便利な機能' href='/docs/fx0/util' />
+<link rel='next' title='Fx0でクリエイトする' href='/docs/fx0/create' />
+<meta name="generator" content="WordPress 3.6.1" />
+<link rel='canonical' href='/docs/fx0/lockscreen' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("feeds", "1");
+
+function initialize() {
+	var feed = new google.feeds.Feed("https://groups.google.com/forum/feed/firefoxos/msgs/rss.xml?num=15");
+	feed.setNumEntries(8);
+	feed.load(function(result) {
+		if (!result.error) {
+			var container = document.getElementById("feed");
+			for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var dd = new Date(entry.publishedDate); // now
+				var yearNum = dd.getYear();
+				if (yearNum < 2000) yearNum += 1900;
+				var m = dd.getMonth() + 1;
+				if (m < 10) {m = "0" + m;}
+				var d = dd.getDate();
+				if (d < 10) {d = "0" + d;}
+				var date = yearNum + "." + m + "." + d + " ";
+				container.innerHTML += "<li><a href='" + entry.link + "' target='_blank'><i class='icon-angle-right'></i>" + entry.title + "<span>（" + date + "のスレッド）</span></a></li>";
+			}
+		}
+	});
+}
+google.setOnLoadCallback(initialize);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42237012-1', 'fxos.org');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="page page-id-697 page-child parent-pageid-474 page-template-default custom-font-enabled single-author">
+<div id="container">
+	 
+	<header class="elsepage">
+	 
+		<div class="inner">
+			<h1><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></a></h1>
+			<h2><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></a></h2>
+			 
+			<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録<span>Googleグループへ</span></a></p>
+		</div>
+	</header>
+	<nav>
+		<ul class="gnav wrap">
+			<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+			<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+			<li class="doc"><a href="#"><i class="icon-file-alt"></i>ドキュメント</a>
+				<ul>
+					<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+					<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+					<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+				</ul>
+			</li>
+			<li><a href="/reports/"><i class="icon-calendar"></i>イベントレポート</a></li>
+		</ul>
+	</nav>
+	<div class="keyvisual">
+	</div>
+	<div id="wrapper" class="wrap">
+		<div id="main">
+
+		<section class="gray page">
+		<h1><i class="icon-calendar"></i>ロックスクリーンを使う</h1>
+		<article class="box">
+			<!--<p class="date">2015.04.11</p>-->
+			<div class="contents">
+				<p><small>【<a href='/docs/fx0/'>au Fx0 導入から活用まで</a>】 > 【ロックスクリーン】</small></p>
+<p>ロックスクリーンとは、スマートフォンの操作やディスプレイ表示を制限できる画面です。一定時間操作を行わないと自動的にロックスクリーンに切り替わります。ロック画面とも呼ばれます。</p>
+<h2>Fx0のロックスクリーンの特徴</h2>
+<p>Fx0では、このロックスクリーンにWebの情報をそのまま表示できます。たとえば、GPSを利用して現在地付近の航空写真を表示したり、ニュースやTwitterの情報などを表示できるのです。</p>
+<p>Framinという専用アプリで、Fx0を使ってでロックスクリーンアプリを作成することも可能です。<a href='http://showcase.kddi.com/csc/' target='_blank'>Creator Showcase</a>で、自作のロックスクリーンアプリを公開したり、他のユーザーのロックスクリーンアプリを利用することもできます。</p>
+<p><a href="http://showcase.kddi.com/csc/"><img src="/wp-content/uploads/2015/04/creator_showcase.png" alt="creator_showcase" width="360" height="381" class="alignnone size-full wp-image-681" /></a></p>
+<h2>ロックスクリーンの操作と設定</h2>
+<h3>ロックスクリーンを選択するには</h3>
+<ul>
+<li>1. ホーム画面で「LockScrees」アイコンをタップ</li>
+<li>2. 利用したいロックスクリーンを選択</li>
+<li>3.「ロック画面に設定する」をタップする</li>
+</ul>
+<p><img src="/wp-content/uploads/2015/04/lockscreen-168x300.png" alt="lockscreen" width="168" height="300" class="alignnone size-medium wp-image-684" /></p>
+<h3>ロックスクリーンを有効にするには</h3>
+<ul>
+<li>1. ホーム画面で「環境設定」>「プライバシーとセキュリティ」>「ロック画面」</li>
+<li>2.「ロック画面」をオンにする</li>
+</ul>
+<h3>ロックスクリーンに特定のWebページを表示させるには</h3>
+<ul>
+<li>1. ホーム画面で「LockScrees」アイコンをタップ</li>
+<li>2. 表示コンテンツの選択画面で「壁紙/URL指定」を選ぶ</li>
+<li>3. 表示したいWebページのURLを入力する</li>
+</ul>
+<h3>ロックスクリーンに表示する情報を設定するには</h3>
+<ul>
+<li>1. ホーム画面で「個人情報」>「環境設定」>「ロック画面」</li>
+<li>2. 表示したい情報をオンにする</li>
+</ul>
+<h3>ロックスクリーンでタップ操作を有効にするには</h3>
+<p>Framinの次のページを参照してください。</p>
+<ul>
+<li><a href='http://framin.kddi.com/pc/howto/tech1.html' target='_blank'>Framin &#8211; 使い方 &#8211; ロック画面でタッチを有効にする</a></li>
+</ul>
+<h3>ロックスクリーンにパスワードをかけるには</h3>
+<ul>
+<li>1. ホーム画面で「環境設定」>「プライバシーとセキュリティ」>「ロック画面」</li>
+<li>2.「パスコードロック」をオンにする</li>
+<li>3.「パスコード」として、４桁の数字を入力する</li>
+</ul>
+<hr />
+<small>【次へ：<a href='/docs/fx0/create'>Fx0でクリエイトする</a>】<br />
+【戻る：<a href='/docs/fx0/'>au Fx0 導入から活用まで</a>】<br />
+</small></p>
+			</div>
+		</article>
+
+	</section>
+	
+		</div><!-- /#main -->
+		<div id="side">
+			<section id="news" class="bl">
+				<h1><i class="icon-rss"></i>最近のトピック</h1>
+				<article class="box">
+					<ul class="list icons" id="feed"></ul>
+					<p class="more"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-circle-arrow-right"></i>すべてみる</a></p>
+				</article>
+			</section>
+			<section id="info" class="bw">
+				<article class="box">
+					<p>Firefox OS コミュニティメンバーの書いた書籍が発売されました！</p>
+					<p class="text-center"><a href="http://www.amazon.co.jp/dp/4897979218/"><img src="/wp-content/themes/fxos-theme/assets/img/fxos_cover.jpg" alt="Firefox OSアプリ開発ガイド"></a></p>
+					<p><strong><a href="http://www.amazon.co.jp/dp/4897979218/">Firefox OSアプリ開発ガイド</a></strong></p>
+					<p style="font-size:0.8em;">本間 雅史, 宮家 秀二, 秋葉 秀樹, 今村 博宜, 山本 祐輔, 秋葉 ちひろ, 小森田 賢史, 浅井 智也 (監修)</p>
+				</article>
+			</section>
+		</div><!-- /#side -->
+	</div><!-- /#wrapper -->
+
+	<footer>
+		<div class="inner">
+			<div class="wrap">
+				<div class="footerColumn">
+					<h1><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></h1>
+					<h2><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></h2>
+					<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録</a></p>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-chevron-down"></i>メインメニュー</h3>
+					<ul>
+						<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+						<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+						<li><a href="/reports/"><i class="icon-calendar"></i>イベント / レポート</a></li>
+						<li><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-rss"></i>最近のトピック</a></li>
+					</ul>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-file-alt"></i>ドキュメント</h3>
+					<ul>
+						<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+						<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+						<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">Portions of this content are ©2013-2014 by Firefox OS Community.<br>このサイトの一部はクリエイティブ・コモンズ・ライセンスのもとでライセンスされています。</p>
+		</div>
+	</footer>
+
+</div><!-- /#container -->
+</body>
+</html>

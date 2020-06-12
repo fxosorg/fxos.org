@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Mozillaドキュメント翻訳の始め方 | Firefox OS コミュニティ！</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/fxos-theme/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; フィード" href="/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; コメントフィード" href="/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; Mozillaドキュメント翻訳の始め方 のコメントのフィード" href="/hacks/mdn_doc_fest/feed" />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='/wp-content/themes/fxos-theme/style.css?ver=3.6.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='/wp-content/themes/fxos-theme/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=3.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='OS 開発者向けドキュメント' href='/hacks' />
+<link rel='next' title='au Fx0 導入から活用まで' href='/docs/fx0' />
+<meta name="generator" content="WordPress 3.6.1" />
+<link rel='canonical' href='/hacks/mdn_doc_fest' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("feeds", "1");
+
+function initialize() {
+	var feed = new google.feeds.Feed("https://groups.google.com/forum/feed/firefoxos/msgs/rss.xml?num=15");
+	feed.setNumEntries(8);
+	feed.load(function(result) {
+		if (!result.error) {
+			var container = document.getElementById("feed");
+			for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var dd = new Date(entry.publishedDate); // now
+				var yearNum = dd.getYear();
+				if (yearNum < 2000) yearNum += 1900;
+				var m = dd.getMonth() + 1;
+				if (m < 10) {m = "0" + m;}
+				var d = dd.getDate();
+				if (d < 10) {d = "0" + d;}
+				var date = yearNum + "." + m + "." + d + " ";
+				container.innerHTML += "<li><a href='" + entry.link + "' target='_blank'><i class='icon-angle-right'></i>" + entry.title + "<span>（" + date + "のスレッド）</span></a></li>";
+			}
+		}
+	});
+}
+google.setOnLoadCallback(initialize);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42237012-1', 'fxos.org');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="page page-id-461 page-child parent-pageid-26 page-template-default custom-font-enabled single-author">
+<div id="container">
+	 
+	<header class="elsepage">
+	 
+		<div class="inner">
+			<h1><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></a></h1>
+			<h2><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></a></h2>
+			 
+			<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録<span>Googleグループへ</span></a></p>
+		</div>
+	</header>
+	<nav>
+		<ul class="gnav wrap">
+			<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+			<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+			<li class="doc"><a href="#"><i class="icon-file-alt"></i>ドキュメント</a>
+				<ul>
+					<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+					<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+					<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+				</ul>
+			</li>
+			<li><a href="/reports/"><i class="icon-calendar"></i>イベントレポート</a></li>
+		</ul>
+	</nav>
+	<div class="keyvisual">
+	</div>
+	<div id="wrapper" class="wrap">
+		<div id="main">
+
+		<section class="gray page">
+		<h1><i class="icon-calendar"></i>Mozillaドキュメント翻訳の始め方</h1>
+		<article class="box">
+			<!--<p class="date">2015.04.05</p>-->
+			<div class="contents">
+				<p>これは、Mozillaプロジェクトの開発ドキュメントを翻訳する作業ステップを簡単にまとめたものです。2015-03-25に行われた<a href='/reports/mdn-%e7%bf%bb%e8%a8%b3%e3%83%9f%e3%83%bc%e3%83%88%e3%82%a2%e3%83%83%e3%83%97/' target='_blank'>MDN 翻訳ミートアップ</a>で、marさんが解説してくれた内容を元に、catchが整理しました。</p>
+<h2>翻訳対象</h2>
+<p>MDN翻訳ミートアップでは、Firefox OSなどの開発者向けドキュメントであるMozilla Developer Networkの日本語訳を作成しています。</p>
+<ul>
+<li><a href="https://developer.mozilla.org/ja/" target="_blank">Mozilla Developer Network(日本語)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network(英語)</a></li>
+<li><a href='https://developer.mozilla.org/ja/docs/needs-review/editorial' target='_blank'>タグ「editorial」の付いた要レビュー記事</a></li>
+</ul>
+<h3>原文ページと翻訳ページのURL対応</h3>
+<p>各ドキュメントは、英語ページは「en-US」、日本語ページは「ja」の階層に配置します。</p>
+<ul>
+<li>原文: https://developer.mozilla.org/<strong>en-US</strong>/Firefox_OS</li>
+<li>日本語: https://developer.mozilla.org/<strong>ja</strong>/Firefox_OS</li>
+</ul>
+<p>各ページのLANGUAGE(原語)アイコン(右上)でも、翻訳済みの言語が確認できます。</p>
+<h3>翻訳リクエストとステータス</h3>
+<p>まだ未翻訳のドキュメントが合った場合、翻訳のリクエストと作業の進捗状況は、以下で確認できます。</p>
+<ul>
+<li><a href="https://github.com/mozilla-japan/translation/" target="_blank">GitHub mozilla-japan/translation</a></li>
+<li><a href="https://github.com/mozilla-japan/translation/wiki" target="_blank">GitHub mozilla-japan/translation 翻訳Wiki</a></li>
+<li><a href="https://github.com/mozilla-japan/translation/issues" target="_blank">GitHub mozilla-japan/translation 翻訳リスト</a></li>
+<li><a href="https://developer.mozilla.org/docs/MDN/Doc_status/API" target="_blank">API documentation status overview &#8211; The MDN project</a></li>
+<li><a href="https://developer.mozilla.org/docs/MDN/Doc_status/Firefox_OS" target="_blank">Firefox OS documentation status &#8211; The MDN project</a></li>
+<li><a href='https://developer.mozilla.org/docs/MDN/Doc_status/Overview' target='_blank'>翻訳の進捗状況(Overview &#8211; The MDN project)</a></li>
+<li><a href='https://developer.mozilla.org/ja/docs/needs-review/editorial' target='_blank'>タグ「editorial」の付いた要レビュー記事</a></li>
+<li><a href='https://support.mozilla.org/ja/kb/revisions?users=dskmori&#038;start=05%2F20%2F2015&#038;end=05%2F21%2F2015' target='_blank'>最近の変更リビジョン | Mozilla サポート</a></li>
+</ul>
+<h2>作業ステップ</h2>
+<p>MDNは、一種のWikiになっています。<br />
+翻訳するには、Webブラウザでログインして、原文(英語)ページから翻訳(日本語)ページを作って、訳していきます。</p>
+<h3>Step1. MDNのアカウントをとってログインする</h3>
+<p>GithubまたはPersonaで、アカウント取得できます。</p>
+<p>右上の「Sign In」からログインします。</p>
+<h3>Step2. 翻訳するページを選ぶ</h3>
+<p>上記の「原文ページと翻訳ページのURL対応」や「翻訳リクエストとステータス」を参考に、作業するページを選びます。自分が得意／知識を持つジャンルや、興味を持つページから始めるのがオススメです。最初から長いページを選ぶと挫折してしまう場合もあるので、ペース配分に注意しましょう。</p>
+<p>まだ日本語ページがない場合、LANGUAGEアイコンのメニューから「Add a Translation」を選択すると言語選択画面が表示されます。</p>
+<h3>Step3. ページの編集</h3>
+<ul>
+<li>1.右上の「編集」ボタンで編集開始</li>
+<li>2. TITLE：まずタイトルを日本語にする</li>
+<li>3. URL スラグ：原文のまま</li>
+</ul>
+<h3> Step4.実際に翻訳する</h3>
+<p>左側に原文が表示されるので、右側に翻訳した内容を入力します。</p>
+<p>このとき「ソース」ボタンで、直接HTMLタグを修正できます。<br />
+リッチテキストエディタが、けっこう大変。</p>
+<p>基本的にHTMLで記述されています。<a href='https://developer.mozilla.org/ja/docs/Project:Custom_Templates' target='_blank'>MDN専用テンプレート</a>（{・・・}）もあるので、そこはいじらないよう注意するといいでしょう。HTMLタグの中のID属性も、修正しない。</p>
+<p>とはいえ、英語文を日本語にするのが大事。細かなタグや属性は、レビューで直してもらえる(こともある)。</p>
+<h3>Step5. レビューを依頼する(任意)</h3>
+<p>翻訳作業コミュニティで、レビュー希望を出すといい。</p>
+<h2>作業上のヒント</h2>
+<h3>リンク修正</h3>
+<p>もしも、ページ内のリンクが「https://developer.mozilla.org/en-US/Firefox_OS」となっていたら、「en-US/」の部分を削除します。</p>
+<p>このようにすると、読者が選択している言語のページに自動的に飛ぶようになります。</p>
+<h3>作業履歴</h3>
+<p>&#8220;編集&#8221;ボタンの右の歯車のアイコンをクリックすると、詳細メニューが開きます。</p>
+<p>ここで&#8221;履歴&#8221;を選択すると、そのページの編集履歴を見ることができます。</p>
+<h3>ソースの表示</h3>
+<p>「ソースの表示」ボタンをクリックすると、Wikiのソースを表示して、直接編集できるようになります。</p>
+<p>ソースを直接編集する場合は、タグの閉じ忘れに注意。閉じ忘れは、自動補完されますが、構造的によろしくない感じになってしまうことがあります。</p>
+<h3>ページ内容のタグ</h3>
+<p>ページの末尾に、ページの種類ごとにタグを付与することができます。とりあえず、英語ページと同じタグを割り当てるといいでしょう。</p>
+<p>タグが複数ある場合は、カンマで区切ります。</p>
+<p>たとえ記事が英語版の翻訳であったとしても、すべてのページに少なくともひとつのタグが付ける必要があります。</p>
+<p>検索結果のフィルタリングや貢献者同士の規約として使われているタグは翻訳されるべきではありません。より詳しいルールや使い方などは、<a href='https://developer.mozilla.org/docs/MDN/Contribute/Howto/Tag' target='_blank'>How to properly tag pages</a>をご参照ください。なお、既存のタグが記事の中身を表せない場合には新たなタグを自由に作ることができます。</p>
+<h3>編集結果の公開</h3>
+<p>MDNは、編集を保存すると、すぐに編集結果が公開されます。</p>
+<h3>編集状態のフラグ</h3>
+<p>以下のフラグで、読者にページの状態を伝えることができます。</p>
+<ul>
+<li>Locallizationフラグ：作業中</li>
+</ul>
+<p>Reviewフラグは、次のようになっています。</p>
+<ul>
+<li><a href="https://developer.mozilla.org/docs/MDN/Contribute/Howto/Do_a_technical_review" target="_blank">Technical = 技術的な内容をレビュー中</a></li>
+<li><a href="https://developer.mozilla.org/docs/MDN/Contribute/Howto/Do_an_editorial_review" target="_blank">Editional = 文章が整っているかレビュー中</a></li>
+</ul>
+<p>始める前に、とりあえず保存すると、他の人が編集できないようにロックされる。</p>
+<p>気にせず翻訳を始めるのが吉。</p>
+<h3>翻訳のスピード</h3>
+<p>一度にページの全部を翻訳しなくてもいい。タイトルと見出しだけとか、テキストを段落ごとに置き換えていくのでもいい。</p>
+<p>Firefox OSまわりだと、英語のドキュメントもドンドン更新されていくので、それに追従するのも重要。</p>
+<h2>関連情報</h2>
+<h3>作業用コミュニティ</h3>
+<ul>
+<li><a href="https://groups.google.com/forum/#!forum/mozilla-translations-ja" target="_blank">Mozilla 翻訳グループ &#8211; Google グループ</a></li>
+<li><a href="http://forums.firehacks.org/trans/" target="_blank">Mozilla翻訳フォーラム</a></li>
+<li><a href="https://twitter.com/hashtag/MozDocFest" target="_blank">Twitter Mozilla翻訳ハッシュタグ</a></li>
+</ul>
+<h3>資料集</h3>
+<ul>
+<li><a href="https://github.com/mozilla-japan/translation/wiki/Firefox-OS-Glossary" target="_blank">Firefox OS 用語集</a></li>
+<li><a href="https://github.com/mozilla-japan/translation/wiki/Mozilla-L10N-Glossary" target="_blank">Mozilla用語集</a></li>
+<li><a href='https://developer.mozilla.org/ja/docs/MDN/Doc_status/Glossary' target='_blank'>Glossary &#8211; The MDN project</a></li>
+<li><a href="http://www.adventar.org/calendars/551" target="_blank">MDNやFirefox OSのドキュメントをみんなで翻訳！ Advent Calendar 2014 &#8211; Adventar</a></li>
+</ul>
+<h3>MDNのドキュメント作成/翻訳資料</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/docs/MDN/Getting_started" target="_blank">MDNを始める &#8211; The MDN project</a></li>
+<li><a href="https://developer.mozilla.org/docs/MDN/Contribute/Localize/Translating_pages" target="_blank">MDNページの翻訳 &#8211; The MDN project</a></li>
+<li><a href="http://unsolublesugar.com/20141203/202157/" target="_blank">Firefox OSヘルプ翻訳のすすめ | Time to live forever</a></li>
+<li><a href="https://support.mozilla.org/ja/" target="_blank">Mozilla サポート（SUpport.MOzilla.org,でSUMOと呼ぶらしい）</a></li>
+<li><a href='https://developer.mozilla.org/ja/docs/Project:Custom_Templates' target='_blank'>MDN 用カスタムテンプレート集</a></li>
+</ul>
+			</div>
+		</article>
+
+	</section>
+	
+		</div><!-- /#main -->
+		<div id="side">
+			<section id="news" class="bl">
+				<h1><i class="icon-rss"></i>最近のトピック</h1>
+				<article class="box">
+					<ul class="list icons" id="feed"></ul>
+					<p class="more"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-circle-arrow-right"></i>すべてみる</a></p>
+				</article>
+			</section>
+			<section id="info" class="bw">
+				<article class="box">
+					<p>Firefox OS コミュニティメンバーの書いた書籍が発売されました！</p>
+					<p class="text-center"><a href="http://www.amazon.co.jp/dp/4897979218/"><img src="/wp-content/themes/fxos-theme/assets/img/fxos_cover.jpg" alt="Firefox OSアプリ開発ガイド"></a></p>
+					<p><strong><a href="http://www.amazon.co.jp/dp/4897979218/">Firefox OSアプリ開発ガイド</a></strong></p>
+					<p style="font-size:0.8em;">本間 雅史, 宮家 秀二, 秋葉 秀樹, 今村 博宜, 山本 祐輔, 秋葉 ちひろ, 小森田 賢史, 浅井 智也 (監修)</p>
+				</article>
+			</section>
+		</div><!-- /#side -->
+	</div><!-- /#wrapper -->
+
+	<footer>
+		<div class="inner">
+			<div class="wrap">
+				<div class="footerColumn">
+					<h1><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></h1>
+					<h2><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></h2>
+					<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録</a></p>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-chevron-down"></i>メインメニュー</h3>
+					<ul>
+						<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+						<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+						<li><a href="/reports/"><i class="icon-calendar"></i>イベント / レポート</a></li>
+						<li><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-rss"></i>最近のトピック</a></li>
+					</ul>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-file-alt"></i>ドキュメント</h3>
+					<ul>
+						<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+						<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+						<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">Portions of this content are ©2013-2014 by Firefox OS Community.<br>このサイトの一部はクリエイティブ・コモンズ・ライセンスのもとでライセンスされています。</p>
+		</div>
+	</footer>
+
+</div><!-- /#container -->
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Firefox OS &amp; Windows 8 アプリ開発ハッカソン | Firefox OS コミュニティ！</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/fxos-theme/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; フィード" href="/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; コメントフィード" href="/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; Firefox OS &amp; Windows 8 アプリ開発ハッカソン のコメントのフィード" href="/archives/events/firefox-os-windows-8-hackathon/feed" />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='/wp-content/themes/fxos-theme/style.css?ver=3.6.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='/wp-content/themes/fxos-theme/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=3.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='関西Firefox OS勉強会 2nd GIG' href='/archives/events/kansai-firefox-os-study-2nd-gig' />
+<link rel='next' title='関西Firefox OS勉強会 3rd GIG' href='/archives/events/kansai-firefox-os-study-3rd-gig' />
+<meta name="generator" content="WordPress 3.6.1" />
+<link rel='canonical' href='/archives/events/firefox-os-windows-8-hackathon' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("feeds", "1");
+
+function initialize() {
+	var feed = new google.feeds.Feed("https://groups.google.com/forum/feed/firefoxos/msgs/rss.xml?num=15");
+	feed.setNumEntries(8);
+	feed.load(function(result) {
+		if (!result.error) {
+			var container = document.getElementById("feed");
+			for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var dd = new Date(entry.publishedDate); // now
+				var yearNum = dd.getYear();
+				if (yearNum < 2000) yearNum += 1900;
+				var m = dd.getMonth() + 1;
+				if (m < 10) {m = "0" + m;}
+				var d = dd.getDate();
+				if (d < 10) {d = "0" + d;}
+				var date = yearNum + "." + m + "." + d + " ";
+				container.innerHTML += "<li><a href='" + entry.link + "' target='_blank'><i class='icon-angle-right'></i>" + entry.title + "<span>（" + date + "のスレッド）</span></a></li>";
+			}
+		}
+	});
+}
+google.setOnLoadCallback(initialize);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42237012-1', 'fxos.org');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="single single-events postid-224 custom-font-enabled single-author">
+<div id="container">
+	 
+	<header class="elsepage">
+	 
+		<div class="inner">
+			<h1><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></a></h1>
+			<h2><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></a></h2>
+			 
+			<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録<span>Googleグループへ</span></a></p>
+		</div>
+	</header>
+	<nav>
+		<ul class="gnav wrap">
+			<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+			<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+			<li class="doc"><a href="#"><i class="icon-file-alt"></i>ドキュメント</a>
+				<ul>
+					<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+					<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+					<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+				</ul>
+			</li>
+			<li><a href="/reports/"><i class="icon-calendar"></i>イベントレポート</a></li>
+		</ul>
+	</nav>
+	<div class="keyvisual">
+	</div>
+	<div id="wrapper" class="wrap">
+		<div id="main">
+
+				　　			<section id="nowEvent" class="org events">
+				<h1><i class="icon-bullhorn"></i>イベント詳細</h1>
+
+
+				<article class="box">
+					<h2>Firefox OS &#038; Windows 8 アプリ開発ハッカソン</h2>
+					<div class="wrap">
+						<p class="thumb"><img width="200" height="200" src="/wp-content/uploads/2013/07/564581994453127_e9e5717b-200x200.png" class="attachment-eventthumb wp-post-image" alt="564581994453127_e9e5717b" /></p>
+						<div class="text">
+							<dl>
+								<dt><i class="icon-time"></i>開催日時</dt>
+								<dd>2013/08/10 (土) 10:00〜18:00</dd>
+								<dt><i class="icon-building"></i>会場</dt>
+								<dd>Mozilla Japan</dd>
+								<dt><i class="icon-group"></i>定員</dt>
+								<dd>40</dd>
+								<dt><i class="icon-twitter"></i>ハッシュタグ</dt>
+								<dd>#fxos</dd>
+						</div>
+					</div>
+					<p class="more"><a href="http://atnd.org/event/fxoswin8hack"><i class="icon-circle-arrow-right"></i>詳細ページ＆申し込み</a></p>
+					<div class="contents">
+						<div>■概要</div>
+<div>みなさん、FirefoxOSもWIndows8もHTML/CSSとJavaScript、俗にい うHTML5でアプリ開発が出来る事をご存知でしょうか。このイベントはFirefoxOS、WIndowsストアアプリの開発者コミュニティが合同で主 催し、各OS向けまたは両OS向けアプリの開発をみんなで楽しく行う事が目的です。</div>
+<div>開発内容やスキルに制限はなく、どなたでもご参加出来ます。</div>
+<div>午前中はOS毎にアプリの作り方に関するセッションを行い、午後からアプリの作成をするのでそれぞれの開発経験が無い方でも大丈夫です。</div>
+<div>アプリは一人で作っても良し、参加者同士で協力して作っても良しです。</div>
+<div>チーム開発も出来ますのでデザイナーの方でコーディングは難しい方もお気軽にアプリ開発に参加出来ます！！！</div>
+<div>（むしろデザインが入る分クオリティが上がるので大歓迎です）</div>
+<div></div>
+<div>OS指定で個別アプリを作成してもOKですが、</div>
+<div>FirefoxOSとWindows8相互プラットフォームで動くアプリが出来ると素敵です★</div>
+<div></div>
+<div>■参加に必要な物</div>
+<div>・FIrefoxブラウザの入っているPC(FirefoxOS)</div>
+<div>・VisualStudio2012または2013の入っているWindowsPC(Windows8アプリ)</div>
+<div></div>
+<div>■当日タイムテーブル</div>
+<div>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</div>
+<div> 9:30-10:00　受付、スタート準備</div>
+<div></div>
+<div>10:00-10:30 Windowsストアアプリ開発に関する基礎セッション</div>
+<div>&lt;Talk&gt;川崎　順平 (Windows 8 Developers)</div>
+<div></div>
+<div>10:40-10:50 休憩</div>
+<div></div>
+<div>10:50-11:20 FirefoxOS開発に関する基礎セッション</div>
+<div>&lt;Talk&gt;浅井　智也 (MozillaJapan エバンジェリスト)</div>
+<div></div>
+<div>11:30-12:30 ランチ（個別または参加者各々でご自由にお取り下さい）</div>
+<div>12:30-17:30 みんなでアプリ開発　★途中、スイーツタイムあるかも？★</div>
+<div>17:30-18:00 有志によるアプリ発表、ハッカソン締め</div>
+<div>18:00- 会場でそのままパーティー</div>
+					</div>
+					<p class="more"><a href="http://atnd.org/event/fxoswin8hack"><i class="icon-circle-arrow-right"></i>詳細ページ＆申し込み</a></p>
+				</article>
+
+			</section>
+
+			<!--<nav class="nav-single">
+				<h3 class="assistive-text">投稿ナビゲーション</h3>
+				<span class="nav-previous"><a href="/archives/events/kansai-firefox-os-study-2nd-gig" rel="prev"><span class="meta-nav">&larr;</span> 関西Firefox OS勉強会 2nd GIG</a></span>
+				<span class="nav-next"><a href="/archives/events/kansai-firefox-os-study-3rd-gig" rel="next">関西Firefox OS勉強会 3rd GIG <span class="meta-nav">&rarr;</span></a></span>
+			</nav>-->
+			<!-- .nav-single -->
+
+		　　		
+		</div><!-- /#main -->
+		<div id="side">
+			<section id="news" class="bl">
+				<h1><i class="icon-rss"></i>最近のトピック</h1>
+				<article class="box">
+					<ul class="list icons" id="feed"></ul>
+					<p class="more"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-circle-arrow-right"></i>すべてみる</a></p>
+				</article>
+			</section>
+			<section id="info" class="bw">
+				<article class="box">
+					<p>Firefox OS コミュニティメンバーの書いた書籍が発売されました！</p>
+					<p class="text-center"><a href="http://www.amazon.co.jp/dp/4897979218/"><img src="/wp-content/themes/fxos-theme/assets/img/fxos_cover.jpg" alt="Firefox OSアプリ開発ガイド"></a></p>
+					<p><strong><a href="http://www.amazon.co.jp/dp/4897979218/">Firefox OSアプリ開発ガイド</a></strong></p>
+					<p style="font-size:0.8em;">本間 雅史, 宮家 秀二, 秋葉 秀樹, 今村 博宜, 山本 祐輔, 秋葉 ちひろ, 小森田 賢史, 浅井 智也 (監修)</p>
+				</article>
+			</section>
+		</div><!-- /#side -->
+	</div><!-- /#wrapper -->
+
+	<footer>
+		<div class="inner">
+			<div class="wrap">
+				<div class="footerColumn">
+					<h1><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></h1>
+					<h2><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></h2>
+					<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録</a></p>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-chevron-down"></i>メインメニュー</h3>
+					<ul>
+						<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+						<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+						<li><a href="/reports/"><i class="icon-calendar"></i>イベント / レポート</a></li>
+						<li><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-rss"></i>最近のトピック</a></li>
+					</ul>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-file-alt"></i>ドキュメント</h3>
+					<ul>
+						<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+						<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+						<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">Portions of this content are ©2013-2014 by Firefox OS Community.<br>このサイトの一部はクリエイティブ・コモンズ・ライセンスのもとでライセンスされています。</p>
+		</div>
+	</footer>
+
+</div><!-- /#container -->
+</body>
+</html>

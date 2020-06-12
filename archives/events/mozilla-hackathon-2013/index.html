@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Mozilla Hackathon 2013 春 | Firefox OS コミュニティ！</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/fxos-theme/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; フィード" href="/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; コメントフィード" href="/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Firefox OS コミュニティ！ &raquo; Mozilla Hackathon 2013 春 のコメントのフィード" href="/archives/events/mozilla-hackathon-2013/feed" />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='/wp-content/themes/fxos-theme/style.css?ver=3.6.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='/wp-content/themes/fxos-theme/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=3.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='next' title='Web プラットフォーム勉強会 1305' href='/archives/events/web-platform-1305' />
+<meta name="generator" content="WordPress 3.6.1" />
+<link rel='canonical' href='/archives/events/mozilla-hackathon-2013' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("feeds", "1");
+
+function initialize() {
+	var feed = new google.feeds.Feed("https://groups.google.com/forum/feed/firefoxos/msgs/rss.xml?num=15");
+	feed.setNumEntries(8);
+	feed.load(function(result) {
+		if (!result.error) {
+			var container = document.getElementById("feed");
+			for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var dd = new Date(entry.publishedDate); // now
+				var yearNum = dd.getYear();
+				if (yearNum < 2000) yearNum += 1900;
+				var m = dd.getMonth() + 1;
+				if (m < 10) {m = "0" + m;}
+				var d = dd.getDate();
+				if (d < 10) {d = "0" + d;}
+				var date = yearNum + "." + m + "." + d + " ";
+				container.innerHTML += "<li><a href='" + entry.link + "' target='_blank'><i class='icon-angle-right'></i>" + entry.title + "<span>（" + date + "のスレッド）</span></a></li>";
+			}
+		}
+	});
+}
+google.setOnLoadCallback(initialize);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42237012-1', 'fxos.org');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="single single-events postid-30 custom-font-enabled single-author">
+<div id="container">
+	 
+	<header class="elsepage">
+	 
+		<div class="inner">
+			<h1><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></a></h1>
+			<h2><a href="/"><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></a></h2>
+			 
+			<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録<span>Googleグループへ</span></a></p>
+		</div>
+	</header>
+	<nav>
+		<ul class="gnav wrap">
+			<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+			<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+			<li class="doc"><a href="#"><i class="icon-file-alt"></i>ドキュメント</a>
+				<ul>
+					<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+					<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+					<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+				</ul>
+			</li>
+			<li><a href="/reports/"><i class="icon-calendar"></i>イベントレポート</a></li>
+		</ul>
+	</nav>
+	<div class="keyvisual">
+	</div>
+	<div id="wrapper" class="wrap">
+		<div id="main">
+
+				　　			<section id="nowEvent" class="org events">
+				<h1><i class="icon-bullhorn"></i>イベント詳細</h1>
+
+
+				<article class="box">
+					<h2>Mozilla Hackathon 2013 春</h2>
+					<div class="wrap">
+						<p class="thumb"></p>
+						<div class="text">
+							<dl>
+								<dt><i class="icon-time"></i>開催日時</dt>
+								<dd>2013年4月27日 13:00 〜 4月28日 16:00</dd>
+								<dt><i class="icon-building"></i>会場</dt>
+								<dd>Mozilla Japan オフィス</dd>
+								<dt><i class="icon-group"></i>定員</dt>
+								<dd>30名</dd>
+								<dt><i class="icon-twitter"></i>ハッシュタグ</dt>
+								<dd>#mozillathon</dd>
+						</div>
+					</div>
+					<p class="more"><a href="http://atnd.org/events/38466"><i class="icon-circle-arrow-right"></i>詳細ページ＆申し込み</a></p>
+					<div class="contents">
+						<p><em>このイベントは終了しました。</em></p>
+<h2>Mozilla コミュニティの皆さん</h2>
+<p>Mozilla 関連のコミュニティ活動をしているメンバーが集まって集中的に作業を行うイベント「Mozilla Hackathon 2013 春」を、4 月 27 日(土) ～ 28 日(日)に開催します。</p>
+<p>Firefox のドキュメントを翻訳している、アドオンの開発をしている、ブラウザ本体部分の開発をしているなど、普段それぞれに活動しているメンバーが、たまには同じ場所に集まって作業しましょう！というイベントです。</p>
+<p>開発ができる方は、アドオン開発だけでなく Firefox OS で動作する Web アプリケーション開発に挑戦してみるのもありですし、技術系は弱いという方は、Mozilla 関係者の面白そうな英語のブログ記事を見つけて翻訳してみるというのも良いでしょう。</p>
+<p>1 日間のみの参加もOKです。<a href="https://dev.mozilla.jp/2012/07/mozilla-hackathon2012-report/" target="_blank">前回の Mozilla Hackathon</a> に参加された方はもちろん、今回初めてという方も、参加をお待ちしています！（<a href="http://atnd.org/events/38466" target="_blank" rel="nofollow">参加登録はコチラから</a>）</p>
+<h3>◆概要</h3>
+<p>日程： 2013 年 4 月 27 日(土) ～ 28 日(日)<br />
+会場： Mozilla Japan オフィス<br />
+&lt;住所&gt; 〒106-0032 東京都港区六本木 7-5-6 (<a href="http://www.mozilla.jp/about/contact/#office" target="_blank">地図</a>)<br />
+&lt;交通&gt; 都営大江戸線 六本木駅から徒歩 4 分、東京メトロ千代田線 乃木坂駅から徒歩 5 分</p>
+<p>宿泊：　なし<br />
+定員：　30 名(定員に達し次第、締め切りとさせていただきます)<br />
+参加費：　無料<br />
+主催：　一般社団法人 Mozilla Japan</p>
+<p>スケジュール： 以下を予定しています。</p>
+<h4>4月27日（土）</h4>
+<p>13:00                  集合 / オリエンテーション<br />
+13:15～18:00      作業<br />
+19:00～21:00      懇親会（希望者のみ）</p>
+<h4>4月28日（日）</h4>
+<p>9:00～13:00        作業<br />
+13:00～14:30      Mozilla アップデート（Mozilla の今後の活動予定の共有、Mozilla コミュニティの活動に関するディスカッション）<br />
+15:00～16:00      成果発表<br />
+16:00                  解散</p>
+<p><a href="http://atnd.org/events/38466" target="_blank" rel="nofollow">※参加登録はコチラからお願いします。</a></p>
+<p>【重要】 参加予定日、懇親会への参加有無、当日予定している作業、遠方から参加される方を対象とした宿泊費・交通費の補助希望の有無について、参加登録時のアンケートフォームへ入力いただけます様、お願いいたします。</p>
+					</div>
+					<p class="more"><a href="http://atnd.org/events/38466"><i class="icon-circle-arrow-right"></i>詳細ページ＆申し込み</a></p>
+				</article>
+
+			</section>
+
+			<!--<nav class="nav-single">
+				<h3 class="assistive-text">投稿ナビゲーション</h3>
+				<span class="nav-previous"></span>
+				<span class="nav-next"><a href="/archives/events/web-platform-1305" rel="next">Web プラットフォーム勉強会 1305 <span class="meta-nav">&rarr;</span></a></span>
+			</nav>-->
+			<!-- .nav-single -->
+
+		　　		
+		</div><!-- /#main -->
+		<div id="side">
+			<section id="news" class="bl">
+				<h1><i class="icon-rss"></i>最近のトピック</h1>
+				<article class="box">
+					<ul class="list icons" id="feed"></ul>
+					<p class="more"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-circle-arrow-right"></i>すべてみる</a></p>
+				</article>
+			</section>
+			<section id="info" class="bw">
+				<article class="box">
+					<p>Firefox OS コミュニティメンバーの書いた書籍が発売されました！</p>
+					<p class="text-center"><a href="http://www.amazon.co.jp/dp/4897979218/"><img src="/wp-content/themes/fxos-theme/assets/img/fxos_cover.jpg" alt="Firefox OSアプリ開発ガイド"></a></p>
+					<p><strong><a href="http://www.amazon.co.jp/dp/4897979218/">Firefox OSアプリ開発ガイド</a></strong></p>
+					<p style="font-size:0.8em;">本間 雅史, 宮家 秀二, 秋葉 秀樹, 今村 博宜, 山本 祐輔, 秋葉 ちひろ, 小森田 賢史, 浅井 智也 (監修)</p>
+				</article>
+			</section>
+		</div><!-- /#side -->
+	</div><!-- /#wrapper -->
+
+	<footer>
+		<div class="inner">
+			<div class="wrap">
+				<div class="footerColumn">
+					<h1><img src="/wp-content/themes/fxos-theme/assets/img/header_logo.png" alt="Firefox OSコミュニティ"></h1>
+					<h2><img src="/wp-content/themes/fxos-theme/assets/img/header_url.png" alt="/"></h2>
+					<p class="joinbtn"><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-plus-sign"></i>コミュニティに登録</a></p>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-chevron-down"></i>メインメニュー</h3>
+					<ul>
+						<li><a href="/"><i class="icon-home"></i>HOME</a></li>
+						<li><a href="/about/"><i class="icon-question-sign"></i>コミュニティについて</a></li>
+						<li><a href="/reports/"><i class="icon-calendar"></i>イベント / レポート</a></li>
+						<li><a href="https://groups.google.com/forum/?fromgroups#!forum/firefoxos"><i class="icon-rss"></i>最近のトピック</a></li>
+					</ul>
+				</div>
+				<div class="footerColumn">
+					<h3><i class="icon-file-alt"></i>ドキュメント</h3>
+					<ul>
+						<li><a href="/docs/"><i class="icon-user"></i>ユーザ向け</a></li>
+						<li><a href="/apps/"><i class="icon-wrench"></i>アプリ開発者向け</a></li>
+						<li><a href="/hacks/"><i class="icon-beaker"></i>OS 開発者向け</a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">Portions of this content are ©2013-2014 by Firefox OS Community.<br>このサイトの一部はクリエイティブ・コモンズ・ライセンスのもとでライセンスされています。</p>
+		</div>
+	</footer>
+
+</div><!-- /#container -->
+</body>
+</html>
